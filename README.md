@@ -8,6 +8,17 @@ The **MXCarkit** is the ideal platform for reasarch, developement and education 
 
 ## Initial Setup
 Follow the instructions to setup [Jeston Nano](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) or [Jetson NX](https://developer.nvidia.com/embedded/learn/get-started-jetson-xavier-nx-devkit).
+
+Clone this repository.
+```git clone https://github.com/william-mx/MXCarkit.git```
+
+Run shell script.
+```
+cd ./MXCarkit
+chmod +x initial_setup_jetson_nano.sh
+./initial_setup_jetson_nano.sh
+```
+
 </br>
 
 ## Getting Started
