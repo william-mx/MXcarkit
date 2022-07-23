@@ -1,9 +1,8 @@
 # MXCarkit
-<<<<<<< HEAD
 
 The **MXCarkit** is the ideal platform for reasarch, developement and education in autonomous driving. For more information, please visit the official product [website](https://mdynamix.de/mx-academy-training/mxcarkit/).
 
-<img src="images/mxcarkit_setup.jpeg" title="MXCarkit" width="800">
+<img src="images/mxcarkit_setup.jpeg" title="MXCarkit" width="1000">
 
 </br>
 
@@ -24,7 +23,5 @@ sudo docker run -it --rm \
 --name ros_melodic_docker \
 mxck_ros_hw:latest bash
 ```
-=======
- 
-<img src="images/mxcarkit_setup.jpeg" title="MXCarkit" width="1000">
->>>>>>> e8e1f874550185e4ea698f3220179a9f61a51e11
+
+
