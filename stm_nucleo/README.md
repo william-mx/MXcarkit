@@ -2,7 +2,7 @@
 
 ### **Initial Setup**
 
-Install the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) on your host PC and connect the microcontroller with a USB extension.
+Install the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) on your host PC and connect the microcontroller with a [USB extension cable](http://www.amazon.de/dp/B07WLNG1XJ/).
 
 
 ### **Programming**
