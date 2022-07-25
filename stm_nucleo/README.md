@@ -12,8 +12,8 @@ Install the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32c
 1. Connect the microcontroller.
 2. Switch to programming tab.
 3. Browse for the binary software file you previously downloaded from this repository.
-4. Check setup.
-5. Start Programming.
+4. Check the setup.
+5. Start programming.
 6. Unplug the extension cable from the microcontroller and connect it back to the jestson.
 
 
