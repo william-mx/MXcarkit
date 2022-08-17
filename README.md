@@ -21,6 +21,8 @@ chmod +x initial_setup_jetson_nano.sh
 ./initial_setup_jetson_nano.sh
 ```
 
+
+
 </br>
 
 ## Getting Started
@@ -43,3 +45,15 @@ mxck_ros_hw:latest bash
 ```
 
 
+Launch hardware - VESC, LEDs, USS, IMU, LIDAR, CAMERA
+
+```
+source devel/setup.bash
+roslaunch mxck_run mxck_run.launch
+```
+
+Add additional docker terminal
+```
+sudo docker ps
+sudo docker exec -it <container_id> bash
+```
