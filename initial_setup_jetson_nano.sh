@@ -28,3 +28,9 @@ echo -e \
 SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTRS{idVendor}=="0483", ATTRS{product}=="ChibiOS/RT Virtual COM Port", ATTRS{idProduct}=="5740", MODE="777", SYMLINK+="vesc"' \
 >> /etc/udev/rules.d/10-local.rules
 
+# build docker image
+docker build -t mxck_ros_hw .
+
+# set the permissions the X server host
+# see http://wiki.ros.org/docker/Tutorials/GUI
+xhost +local:docker
