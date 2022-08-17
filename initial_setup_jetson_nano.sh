@@ -34,3 +34,6 @@ docker build -t mxck_ros_hw .
 # set the permissions the X server host
 # see http://wiki.ros.org/docker/Tutorials/GUI
 xhost +local:docker
+
+# move ros workspace to home directory
+mv mxck_ws ~/
