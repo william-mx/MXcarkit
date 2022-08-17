@@ -20,3 +20,11 @@ apt-get install --yes librealsense2-dev
 git clone https://github.com/Pyrestone/jetson-fan-ctl.git &&\
 cd jetson-fan-ctl/ &&\
 ./install.sh
+
+# bin usb devices under static name unsing udev rules
+# see http://reactivated.net/writing_udev_rules.html
+echo -e \
+'SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTRS{idVendor}=="0483", ATTRS{product}=="STM32 STLink", ATTRS{idProduct}=="374b", MODE="777", SYMLINK+="stm32_nucleo"
+SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTRS{idVendor}=="0483", ATTRS{product}=="ChibiOS/RT Virtual COM Port", ATTRS{idProduct}=="5740", MODE="777", SYMLINK+="vesc"' \
+>> /etc/udev/rules.d/10-local.rules
+

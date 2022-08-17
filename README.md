@@ -28,9 +28,14 @@ chmod +x initial_setup_jetson_nano.sh
 </br>
 
 Run docker image
-```
+```docker
 sudo docker run -it --rm \
---mount type=bind,source=/home/mxck/mxck_ws/mxck_hw,target=/catkin_ws \
+--mount type=bind,source=/home/mxck/mxck_ws,target=/catkin_ws \
+--mount type=bind,source=/dev/stm32_nucleo,target=/dev/stm32_nucleo \
+--mount type=bind,source=/dev/vesc,target=/dev/vesc \
+--env="DISPLAY" \
+--env="QT_X11_NO_MITSHM=1" \
+--volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
 --privileged \
 --net=host \
 --name ros_melodic_docker \
