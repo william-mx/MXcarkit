@@ -18,6 +18,7 @@ Two Lipo batteries connected in series provide **14.8 V**.
 <img src="../images/power_converter.jpg" title="MXCarkit" width="500">
 
 * **Input from Powerbank**: (16V, 18V | 4.7A)
+* 
 * **Output**: 5.2V 4.7A
   
 # USB Hub
@@ -25,3 +26,16 @@ Two Lipo batteries connected in series provide **14.8 V**.
 
 * **USB 3.0**: 5V 900mA max.
 * The totality of all connected devices must not exceed (5 V | 900 mA)
+
+# Jetson Computers
+## Jetson Nano
+<img src="../images/jetson_nano.jpg" title="MXCarkit" width="500">
+
+* **DC Barrel jack**: (5.5V | 5A) max.
+* **Micro-USB port**: (5.5V | 2A) max.
+
+## Jetson NX
+
+<img src="../images/jetson_nx.jpg" title="MXCarkit" width="500">
+
+* **DC Barrel jack**: (9 - 20V | 4.4A)
