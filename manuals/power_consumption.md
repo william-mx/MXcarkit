@@ -46,14 +46,7 @@ Two Lipo batteries connected in series provide **14.8 V**.
 <img src="../images/sen0304.jpg" title="MXCarkit" width="500">
 
 * (3.3V - 5.5V | 20mA)
-* (5V | 100mA) total
-
-### Ultrasonic Sensor SEN0304
-
-<img src="../images/sen0304.jpg" title="MXCarkit" width="500">
-
-* (3.3V - 5.5V | 20mA)
-* (5V | 100mA) total
+* (5V | 200mA) total
 
 ### MPU6050 IMU
 
