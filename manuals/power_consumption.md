@@ -71,14 +71,30 @@ Two Lipo batteries connected in series provide **14.8 V**.
 * LED Stripe with 40mA max. (5mA per LED)
 * 200mA total max. 
 
-# RealSense D435i
+## RealSense D435i
 
 <img src="../images/realsense_d435i.jpg" title="MXCarkit" width="500">
 
 * (5.25V | 700mA) max.
 
-# RPLidar A2M8
+## RPLidar A2M8
 
 <img src="../images/RPLIDAR_A2M8.jpg" title="MXCarkit" width="500">
 
 * (5.5V | 600mA) max.
+
+
+# Recommended power supply
+
+Use the external power supply for the lidar and connect it to the USB port of the powerbank. This unloads the Jetson.
+
+<img src="../images/rplidar_power_supply.jpg" title="MXCarkit" width="500">
+
+Use the power converter and connect it to the DC OUT port of the powerbank. Set the powerbank to min. 16V by double clicking several times. From that moment on the powerbank delivers 4.7V instead of 3V to the Jetson.
+
+<img src="../images/power_converter.jpg" title="MXCarkit" width="500">
+
+Connect the USB hub to a USB port of the powerbank. The Jetson is relieved by the external power supply. 
+
+<img src="../images/usb_hub.jpg" title="MXCarkit" width="500">
+
