@@ -94,7 +94,12 @@ Use the power converter and connect it to the DC OUT port of the powerbank. Set 
 
 <img src="../images/power_converter.jpg" title="MXCarkit" width="500">
 
-Connect the USB hub to a USB port of the powerbank. The Jetson is relieved by the external power supply. 
+Connect the USB hub to a USB port of the powerbank and then connect the Nucelo to one of the free ports. The Jetson is relieved by the external power supply. Make sure that the allowed 900mA at the USB hub is not exceeded. 
+
+*Testing*: To avoid the possibility that the power supply of the USB hub has a loose contact: Disconnect data cable, plug smartphone or similar into a free port and see if the device is supplied with power.
 
 <img src="../images/usb_hub.jpg" title="MXCarkit" width="500">
 
+With the above setup, the Jetson should no longer have any problems with the power supply.  In case of problems, e.g. by connecting more devices, the free USB-C port on the powerbank can be connected with a data power splitter cable. This further reduces the load on the Jetson.
+
+<img src="../images/usbc_otg_splitter.jpg" title="MXCarkit" width="500">
