@@ -18,7 +18,6 @@ Two Lipo batteries connected in series provide **14.8 V**.
 <img src="../images/power_converter.jpg" title="MXCarkit" width="500">
 
 * **Input from Powerbank**: (16V, 18V | 4.7A)
-* 
 * **Output**: 5.2V 4.7A
   
 # USB Hub
@@ -39,3 +38,42 @@ Two Lipo batteries connected in series provide **14.8 V**.
 <img src="../images/jetson_nx.jpg" title="MXCarkit" width="500">
 
 * **DC Barrel jack**: (9 - 20V | 4.4A)
+
+# Sensors
+## STM32 NUCLEO-L432KC
+### Ultrasonic Sensor SEN0304
+
+<img src="../images/sen0304.jpg" title="MXCarkit" width="500">
+
+* (3.3V - 5.5V | 20mA)
+* (5V | 100mA) total
+
+### Ultrasonic Sensor SEN0304
+
+<img src="../images/sen0304.jpg" title="MXCarkit" width="500">
+
+* (3.3V - 5.5V | 20mA)
+* (5V | 100mA) total
+
+### MPU6050 IMU
+
+<img src="../images/imu.jpg" title="MXCarkit" width="500">
+
+* Input power supply: 5V
+* Gyroscope operating current: 3.6 mA
+* Accelerometer normal operating current: 500 µA
+
+### Syncro Kr-331 RC Receiver
+
+<img src="../images/rc_receiver.jpg" title="MXCarkit" width="500">
+
+* (4.8 - 6.0V | approx. 20mA)
+
+### Illumination Adafruit LED Driver
+
+<img src="../images/led_driver.jpg" title="MXCarkit" width="500">
+
+* **LED-Driver**: 5-17 V
+* 8 Standard-LEDs with 20mA max. each
+* LED Stripe with 40mA max. (5mA per LED)
+* 200mA total max. 
