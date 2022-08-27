@@ -70,3 +70,15 @@ Two Lipo batteries connected in series provide **14.8 V**.
 * 8 Standard-LEDs with 20mA max. each
 * LED Stripe with 40mA max. (5mA per LED)
 * 200mA total max. 
+
+# RealSense D435i
+
+<img src="../images/realsense_d435i.jpg" title="MXCarkit" width="500">
+
+* (5.25V | 700mA) max.
+
+# RPLidar A2M8
+
+<img src="../images/RPLIDAR_A2M8.jpg" title="MXCarkit" width="500">
+
+* (5.5V | 600mA) max.
