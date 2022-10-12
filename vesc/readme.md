@@ -40,10 +40,11 @@ Next we set the values for *Motor min (regen)* and *Batt min (regen)*.
 
 **Batt min (regen)**: The maximum current you allow the ESC to push towards your battery or battery management system (if incorporated in your system) when braking. Battery Current Max Regen is important for **brake strength at speed!** Low settings result in weak brakes at speed! This value should not exceed the maximum burst charge current rating of your battery or capability of your battery management system. So lets set that to -10A.
 
-Klick [here](https://vesc-project.com/node/938) for further information.
-
 
 **Batt max**: Our Lipo is specified as 5400mAh and 45C. Our max. output current is calculated with Imax = 5.4Ah * 45C = 234A. Manufacturers often overrate the batteries and cutting the value in half is recommend. 
 That's why we set 120A as the limit.
+
+
+Klick [here](https://vesc-project.com/node/938) for further information.
 
 
