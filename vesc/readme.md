@@ -5,7 +5,7 @@ Installed ESC:  [FSESC 4.12 50A Based on VESC4.12](https://flipsky.net/products/
 
 </br>
 
-<img src="images/../../images/vesc.jpg" title="MXCarkit" width="300">
+<img src="images/../../images/vesc.jpeg" title="MXCarkit" width="300">
 
 </br>
 
