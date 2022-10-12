@@ -24,9 +24,9 @@ The maximum rpm of the motor that can be safely reached is calculated with *rpm 
 
 That would be much too fast and the wheels would slip. Therefore, we set a maximum speed and calculate the rpm for it.
 
-We have a wheel diameter of 97 mm and therefore a wheel circumference *U* of approx. 305 mm. We define a maximum speed  *vmax* = 15 km/h = 250000 mm/min. So we get *vmax / U ≈ 820 rpm*.
+Our carkit has a gear ratio of *8.95:1*. We have a wheel diameter of 97 mm and therefore a wheel circumference *U* of approx. 305 mm. We define a maximum speed  *vmax* = 15 km/h = 250000 mm/min. So we get *vmax / U * ratio ≈ 7342 rpm*.
 
-For the vesc configuration we have to convert this into erpm and get it rpm * n_poles = 820 * 4 ≈ **3280 erpm**.
+For the vesc configuration we have to convert this into erpm and get it rpm * n_poles = 7342 * 4 ≈ **30000 erpm**.
 
 Next we set the value for *battery cutoff start* and *battery cutoff end*. When the battery has been discharged to the start value, the power supplied to the motor will steadily decrease. When the end value is reached it won't spin at all. We set **battery cutoff start = 15V** and **battery cutoff end = 14.8V**. This protects the battery from deep discharge.
 
