@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# set the permissions the X server host
+# see http://wiki.ros.org/docker/Tutorials/GUI
+xhost +local:docker
+
 # run ros docker container
 sudo docker run -it --rm \
 --mount type=bind,source=/home/mxck/mxck_ws,target=/catkin_ws \
