@@ -1,0 +1,3 @@
+[submodule "mxck_ws"]
+	path = mxck_ws
+	url = https://github.com/william-mx/mxck_ws.git

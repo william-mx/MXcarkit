@@ -17,8 +17,8 @@ git clone https://github.com/william-mx/MXCarkit.git
 Run shell script.
 ```
 cd ./MXCarkit
-chmod +x initial_setup_jetson_nano.sh
-./initial_setup_jetson_nano.sh
+chmod +x initial_setup.sh
+./initial_setup.sh
 ```
 
 
@@ -29,19 +29,20 @@ chmod +x initial_setup_jetson_nano.sh
 
 </br>
 
+Make shell script executable.
+```
+cd ./mxck_ws
+chmod +x run_ros_docker.sh add_ros_docker.sh 
+```
+
 Run docker image
-```docker
-sudo docker run -it --rm \
---mount type=bind,source=/home/mxck/mxck_ws,target=/catkin_ws \
---mount type=bind,source=/dev/stm32_nucleo,target=/dev/stm32_nucleo \
---mount type=bind,source=/dev/vesc,target=/dev/vesc \
---env="DISPLAY" \
---env="QT_X11_NO_MITSHM=1" \
---volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
---privileged \
---net=host \
---name ros_melodic_docker \
-mxck_ros_hw:latest bash
+```
+./run_ros_docker.sh
+```
+
+Add additional docker terminal
+```
+./add_ros_docker.sh
 ```
 
 
