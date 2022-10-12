@@ -12,8 +12,8 @@ Installed ESC:  [FSESC 4.12 50A Based on VESC4.12](https://flipsky.net/products/
 The BLDC and the servo motor are controlled by the VESC and is powered by the two Lipo batteries.
 
 <p float="left">
-  <img src="../images/kyosho_torx8.jpg" height="80" />
-  <img src="../images/LiPo.jpg" height="80" /> 
+  <img src="../images/kyosho_torx8.jpg" height="100" />
+  <img src="../images/LiPo.jpg" height="100" /> 
 </p>
 
 </br>
@@ -42,5 +42,8 @@ Next we set the values for *Motor min (regen)* and *Batt min (regen)*.
 
 Klick [here](https://vesc-project.com/node/938) for further information.
 
+
+**Batt max**: Our Lipo is specified as 5400mAh and 45C. Our max. output current is calculated with Imax = 5.4Ah * 45C = 234A. Manufacturers often overrate the batteries and cutting the value in half is recommend. 
+That's why we set 120A as the limit.
 
 
