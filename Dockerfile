@@ -9,9 +9,10 @@ RUN apt-get update \
     ros-$ROS_DISTRO-ackermann-msgs \
     ros-$ROS_DISTRO-realsense2-camera \
     ros-$ROS_DISTRO-rplidar-ros \
-    ros-$ROS_DISTRO-image-view 
-
-RUN apt-get install --yes ros-$ROS_DISTRO-joy
+    ros-$ROS_DISTRO-image-view \
+    ros-$ROS_DISTRO-rqt \
+    ros-$ROS_DISTRO-rqt-common-plugins \
+    ros-$ROS_DISTRO-joy
 
 WORKDIR ./catkin_ws
 
