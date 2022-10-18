@@ -16,12 +16,13 @@ done
 # set permission to access serial devices
 usermod -a -G dialout mxck
 
-
 # remove libreoffice to save diskspace
 apt-get update &&\
 apt-get autoremove libreoffice* -y &&\
 apt-get clean
 
+# install curl
+apt-get install curl
 
 # install relasense viewer
 # see https://dev.intelrealsense.com/docs/nvidia-jetson-tx2-installation for more details
