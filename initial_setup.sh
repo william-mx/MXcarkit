@@ -56,7 +56,7 @@ mv mxck_ws ~/
 
 
 # install fan control for jetson nano
-if [ $device == nano ]
+if [ $device == "nano" ]
 then
    cd ~/
    git clone https://github.com/Pyrestone/jetson-fan-ctl.git &&\
