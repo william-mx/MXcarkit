@@ -22,7 +22,7 @@ apt-get autoremove libreoffice* -y &&\
 apt-get clean
 
 # install curl
-apt-get install curl
+apt-get install --yes curl
 
 # install relasense viewer
 # see https://dev.intelrealsense.com/docs/nvidia-jetson-tx2-installation for more details
