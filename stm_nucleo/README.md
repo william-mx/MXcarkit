@@ -7,7 +7,7 @@
 
 
 ## Introduction <a name="introduction"></a>
-The Mictocontroller can be programmed in two ways. For the first option we use the **STMCubeProgrammer**. To do so, we have to unplug the microcontroller from the Jetson and connect it to our notebook to install the software. For the second option we use the **J-Link Flash Tool** from Segger and can program the microcontroller directly from the Jetson **(recommended)**.
+The Mictocontroller can be programmed in two ways. For the first option we use the **STMCubeProgrammer**. To do so, we have to unplug the microcontroller from the Jetson and connect it to our notebook. For the second option we use the **J-Link Flash Tool** from Segger and can program the microcontroller directly from the Jetson **(recommended)**.
 
 ### **Preparation**
 The microcontroller must be set to STLink in order to use the STMCubeProgrammer. For the J-Link Flash Tool we need J-Link.
@@ -45,7 +45,7 @@ Download and install the [64-bit DEB Installer](https://www.segger.com/downloads
 
 ### **Programming**
 
-<img src="../images/JFlashLite.png" title="MXCarkit" width="1000">
+<img src="../images/JFlashLite.png" title="MXCarkit" width="800">
 
 1. Set the device.
 2. Search for *STM32L432KC*.
