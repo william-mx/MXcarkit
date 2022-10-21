@@ -45,7 +45,7 @@ Download and install the [64-bit DEB Installer](https://www.segger.com/downloads
 
 ### **Programming**
 
-<img src="../images/JFlashLite.png" title="MXCarkit" width="800">
+<img src="../images/JFlashLite.png" title="MXCarkit" width="500">
 
 1. Set the device.
 2. Search for *STM32L432KC*.
