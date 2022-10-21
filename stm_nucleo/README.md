@@ -36,7 +36,7 @@ Install the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32c
 5. Start programming.
 6. Unplug the extension cable from the microcontroller and connect it back to the Jetson.
 
-## Using STM32CubeProgrammer <a name="p2"></a>
+## Using J-Link Flash (recommended) <a name="p2"></a>
 
 ### **Initial Setup**
 
