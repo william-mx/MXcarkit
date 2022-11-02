@@ -11,7 +11,7 @@ Follow the instructions to setup [Jeston Nano](https://developer.nvidia.com/embe
 
 Clone this repository.
 ```
-git clone https://github.com/william-mx/MXCarkit.git
+git clone --recurse-submodules https://github.com/william-mx/MXCarkit.git
 ```
 
 Run shell script.
