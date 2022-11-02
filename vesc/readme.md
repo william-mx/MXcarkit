@@ -1,7 +1,7 @@
 # VESC
 An electronic speed control (ESC) is an electronic circuit that controls and regulates the speed of an electric motor. 
 
-Installed ESC:  [FSESC 4.12 50A Based on VESC4.12](https://flipsky.net/products/torque-esc-vesc-%C2%AE-bldc-electronic-speed-controller)
+Installed ESC:  [FSESC 4.20 50A Based on VESC4.12](https://flipsky.net/products/torque-esc-vesc-%C2%AE-bldc-electronic-speed-controller)
 
 </br>
 
@@ -41,7 +41,7 @@ Next we set the values for *Motor min (regen)* and *Batt min (regen)*.
 **Batt min (regen)**: The maximum current you allow the ESC to push towards your battery or battery management system (if incorporated in your system) when braking. Battery Current Max Regen is important for **brake strength at speed!** Low settings result in weak brakes at speed! This value should not exceed the maximum burst charge current rating of your battery or capability of your battery management system. So lets set that to -10A.
 
 
-**Batt max**: Our Lipo is specified as 5400mAh and 45C. Our max. output current is calculated with Imax = 5.4Ah * 45C = 234A. Manufacturers often overrate the batteries and cutting the value in half is recommend. 
+**Batt max**: Our Lipo is specified as 5200mAh and 45C. Our max. output current is calculated with Imax = 5.2Ah * 45C = 234A. Manufacturers often overrate the batteries and cutting the value in half is recommend. 
 That's why we set 120A as the limit.
 
 
