@@ -20,6 +20,12 @@ The BLDC and the servo motor are controlled by the VESC and is powered by the tw
 
 The BLDC has **4 poles** and a kv rating of **2300 kV**. The fully charged Lipo batteries deliver **16.8 V** and **14.8 V** at a capacity of 15%. From the moment the lipos should be disconnected and recharged.
 
+## BLDC Tool
+We configure the VESC using the [BLDC tool](http://www.hellray.de/tutorials-bedinungsanleitung-d-e-f/download-files/).
+<img src="images/../../images/bldc_tool.png" title="MXCarkit" width="1000">
+
+<span style="color:yellow">**Max ERPM**</span>
+___
 The maximum rpm of the motor that can be safely reached is calculated with *rpm = kV * U*. Our maximum rpm are thus: 2300 kV * 14.8V = **34.040 rpm**
 
 That would be much too fast and the wheels would slip. Therefore, we set a maximum speed and calculate the rpm for it.
@@ -28,8 +34,13 @@ Our carkit has a gear ratio of *8.95:1*. We have a wheel diameter of 97 mm and t
 
 For the vesc configuration we have to convert this into erpm and get it rpm * n_poles = 7342 * 4 ≈ **30000 erpm**.
 
+<span style="color:cyan">**Battery Cutoff**</span>
+___
 Next we set the value for *battery cutoff start* and *battery cutoff end*. When the battery has been discharged to the start value, the power supplied to the motor will steadily decrease. When the end value is reached it won't spin at all. We set **battery cutoff start = 15V** and **battery cutoff end = 14.8V**. This protects the battery from deep discharge.
 
+
+<span style="color:lime">**Current Limits**</span>
+___
 Next we set the values for *Motor min (regen)* and *Batt min (regen)*.
 
 </br>
@@ -44,6 +55,7 @@ Next we set the values for *Motor min (regen)* and *Batt min (regen)*.
 **Batt max**: Our Lipo is specified as 5200mAh and 45C. Our max. output current is calculated with Imax = 5.2Ah * 45C = 234A. Manufacturers often overrate the batteries and cutting the value in half is recommend. 
 That's why we set 120A as the limit.
 
+___
 
 Klick [here](https://vesc-project.com/node/938) for further information.
 
