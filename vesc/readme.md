@@ -32,7 +32,7 @@ That would be much too fast and the wheels would slip. Therefore, we set a maxim
 
 Our carkit has a gear ratio of *8.95:1*. We have a wheel diameter of 97 mm and therefore a wheel circumference *U* of approx. 305 mm. We define a maximum speed  *vmax* = 15 km/h = 250000 mm/min. So we get *vmax / U * ratio ≈ 7342 rpm*.
 
-For the vesc configuration we have to convert this into erpm and get it rpm * n_poles = 7342 * 4 ≈ **30000 erpm**.
+For the vesc configuration we have to convert this into erpm and get rpm * n_poles = 7342 * 4 ≈ **30000 erpm**.
 
 <span style="color:cyan">**Battery Cutoff**</span>
 ___
