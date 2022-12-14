@@ -42,6 +42,12 @@ SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTR
 >> /etc/udev/rules.d/10-local.rules
 
 
+# clone mxck workspace
+git clone https://github.com/william-mx/mxck_ws.git
+
+# move ros workspace to home directory
+mv mxck_ws ~/
+
 # build docker image
 docker build -t mxck_ros_hw .
 
@@ -51,12 +57,8 @@ docker build -t mxck_ros_hw .
 xhost +local:docker
 
 
-# move ros workspace to home directory
-mv mxck_ws ~/
-
-
 # install fan control for jetson nano
-if [ $device == "nano" ]
+if [$device == "nano"]
 then
    cd ~/
    git clone https://github.com/Pyrestone/jetson-fan-ctl.git &&\
