@@ -18,7 +18,7 @@ Run shell script.
 ```
 cd ./MXCarkit
 chmod +x initial_setup.sh
-./initial_setup.sh
+sudo ./initial_setup.sh
 ```
 
 
