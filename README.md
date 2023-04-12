@@ -52,9 +52,3 @@ Launch hardware - VESC, LEDs, USS, IMU, LIDAR, CAMERA
 source devel/setup.bash
 roslaunch mxck_run mxck_run.launch
 ```
-
-Add additional docker terminal
-```
-sudo docker ps
-sudo docker exec -it <container_id> bash
-```
