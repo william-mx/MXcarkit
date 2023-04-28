@@ -32,12 +32,15 @@ add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo bionic ma
 apt-get install --yes librealsense2-utils &&\
 apt-get install --yes librealsense2-dev
 
+# install dos2unix
+# format conversion for text files from DOS/Mac to Unix and vice versa
+apt-get install --yes dos2unix
 
 # bin usb devices under static name unsing udev rules
 # see http://reactivated.net/writing_udev_rules.html
 echo -e \
-'SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTRS{idVendor}=="0483", ATTRS{product}=="STM32 STLink", ATTRS{idProduct}=="374b", MODE="777", SYMLINK+="stm32_nucleo" # ST-Link
-SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="SEGGER", ATTRS{idVendor}=="1366", ATTRS{product}=="J-Link", ATTRS{idProduct}=="0105", MODE="777", SYMLINK+="stm32_nucleo" # J-Link
+'SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="SEGGER", ATTRS{idVendor}=="1366", ATTRS{product}=="J-Link", ATTRS{idProduct}=="0105", MODE="777", SYMLINK+="stm32_nucleo"
+SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTRS{idVendor}=="0483", ATTRS{product}=="STM32 STLink", ATTRS{idProduct}=="374b", MODE="777", SYMLINK+="stm32_nucleo"
 SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTRS{idVendor}=="0483", ATTRS{product}=="ChibiOS/RT Virtual COM Port", ATTRS{idProduct}=="5740", MODE="777", SYMLINK+="vesc"' \
 >> /etc/udev/rules.d/10-local.rules
 
