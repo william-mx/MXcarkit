@@ -24,5 +24,11 @@ chmod +x initial_setup.sh
 sudo ./initial_setup.sh
 ```
 
+## Prepare STM32 Nucleo Board
+Follow the [instructions](https://github.com/william-mx/MXCarkit/tree/main/stm_nucleo) to install the latest software on the microcontroller.
+
+## Prepare VESC
+Usually nothing should be changed in the VESC firmware. If you have to, follow these [instructions](https://github.com/william-mx/MXCarkit/tree/main/vesc).
+
 ## ROS Setup
 Donwload the latest ros workspace from [Github](https://github.com/william-mx/mxck_ws) and and follow the instructions specified there.
