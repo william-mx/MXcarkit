@@ -17,12 +17,16 @@ done
 usermod -a -G dialout mxck
 
 # remove libreoffice to save diskspace
-apt-get update &&\
-apt-get autoremove libreoffice* -y &&\
+apt update &&\
+apt autoremove libreoffice* -y &&\
+apt remove -y firefox &&\
 apt-get clean
 
 # install curl
 apt-get install --yes curl
+
+# install chromium browser for foxglove
+apt install -y chromium-browser
 
 # install relasense viewer
 # see https://dev.intelrealsense.com/docs/nvidia-jetson-tx2-installation for more details
@@ -44,15 +48,13 @@ SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTR
 SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTRS{idVendor}=="0483", ATTRS{product}=="ChibiOS/RT Virtual COM Port", ATTRS{idProduct}=="5740", MODE="777", SYMLINK+="vesc"' \
 >> /etc/udev/rules.d/10-local.rules
 
-
 # clone mxck workspace
-git clone https://github.com/william-mx/mxck_ws.git
+git clone -b mxck_base https://github.com/william-mx/mxck_ws.git ~/mxck_ws/mxck_base
 
-# move ros workspace to home directory
-mv mxck_ws ~/
 
 # build docker image
-docker build -t mxck_ros_hw .
+cd ~/mxck_ws/mxck_base
+docker build -t mxck_base_melodic .
 
 
 # set the permissions the X server host
