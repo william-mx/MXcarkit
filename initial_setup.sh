@@ -49,7 +49,7 @@ SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTR
 >> /etc/udev/rules.d/10-local.rules
 
 # clone mxck workspace
-git clone -b mxck_base https://github.com/william-mx/mxck_ws.git ~/mxck_ws/mxck_base
+git clone -b mxck_base https://github.com/william-mx/mxck_ws.git /home/mxck/mxck_ws/mxck_base
 
 
 # build docker image
