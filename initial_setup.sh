@@ -13,6 +13,9 @@ do
     esac
 done
 
+# change hostname
+hostnamectl set-hostname mxck
+
 # set permission to access serial devices
 usermod -a -G dialout mxck
 
@@ -27,6 +30,12 @@ apt-get install --yes curl
 
 # install chromium browser for foxglove
 apt install -y chromium-browser
+
+# install jtop for monitoring resource usage, temperature and power draw
+apt update && \
+apt install python3-pip && \
+pip3 install --upgrade pip && \
+pip3 install -U jetson-stats
 
 # install relasense viewer
 # see https://dev.intelrealsense.com/docs/nvidia-jetson-tx2-installation for more details
