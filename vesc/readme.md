@@ -12,7 +12,7 @@ In this section, we describe the most important parameters of our Electronic Spe
 - **EPRM:** 60000 - his is the maximum Electrical RPM (revolutions per minute) the ESC can handle. Electrical RPM considers the number of pole pairs in the motor and is a factor in calculating the actual RPM.
 - **Current:** 50A continuous / 240A peak - Specifies the maximum electrical current the ESC can handle continuously, with peak values for short durations.
 - **Voltage Range:** 8V-60V - The range of input voltage the ESC can safely operate within.
-- **BEC:** 5V@1.5A - BEC (Battery Eliminator Circuit) provides a stable 5V output at up to 1.5A to power the receiver and servos, eliminating the need for a separate battery pack.
+- **BEC:** `5V@1.5A` - BEC (Battery Eliminator Circuit) provides a stable 5V output at up to 1.5A to power the receiver and servos, eliminating the need for a separate battery pack.
 - **Motor Control Interfaces:** PPM, analog, UART, I2C, USB, CAN-bus - Various interfaces for connecting and communicating with the ESC for motor control.
 
 
