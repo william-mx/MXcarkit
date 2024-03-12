@@ -14,8 +14,8 @@
     <l_erpm_start>0.8</l_erpm_start> <!--Motor Settings > General > ERPM >ERPM Limit Start > Makes ERPM Limit softer -->
     <l_max_erpm_fbrake>30000</l_max_erpm_fbrake>
     <l_max_erpm_fbrake_cc>30000</l_max_erpm_fbrake_cc>
-    <l_min_vin>12.8</l_min_vin> <!--Motor Settings > General > Advanced > Minimum Input Voltage -->
-    <l_max_vin>16.8</l_max_vin> <!--Motor Settings > General > Advanced > Maximum Input Voltage -->
+    <l_min_vin>12.0</l_min_vin> <!--Motor Settings > General > Advanced > Minimum Input Voltage -->
+    <l_max_vin>18.0</l_max_vin> <!--Motor Settings > General > Advanced > Maximum Input Voltage -->
     <l_battery_cut_start>14</l_battery_cut_start> <!--Motor Settings > General > Voltage > Battery Voltage Cutoff Start -->
     <l_battery_cut_end>12.8</l_battery_cut_end> <!--Motor Settings > General > Voltage > Battery Voltage Cutoff End -->
     <l_slow_abs_current>1</l_slow_abs_current>
