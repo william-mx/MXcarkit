@@ -9,10 +9,10 @@ In this section, we describe the most important parameters of our Electronic Spe
 
 <img src="images/../../images/vesc.jpeg" title="MXCarkit" width="300">
 
-- **EPRM:** 60000 - his is the maximum Electrical RPM (revolutions per minute) the ESC can handle. Electrical RPM considers the number of pole pairs in the motor and is a factor in calculating the actual RPM.
-- **Current:** 50A continuous / 240A peak - Specifies the maximum electrical current the ESC can handle continuously, with peak values for short durations.
-- **Voltage Range:** 8V-60V - The range of input voltage the ESC can safely operate within.
-- **BEC:** 5V@1.5A - BEC (Battery Eliminator Circuit) provides a stable 5V output at up to 1.5A to power the receiver and servos, eliminating the need for a separate battery pack.
+- **EPRM:** `60000` - his is the maximum Electrical RPM (revolutions per minute) the ESC can handle. Electrical RPM considers the number of pole pairs in the motor and is a factor in calculating the actual RPM.
+- **Current:** `50A continuous / 240A peak` - Specifies the maximum electrical current the ESC can handle continuously, with peak values for short durations.
+- **Voltage Range:** `8V-60V` - The range of input voltage the ESC can safely operate within.
+- **BEC:** `5V@1.5A` - BEC (Battery Eliminator Circuit) provides a stable 5V output at up to 1.5A to power the receiver and servos, eliminating the need for a separate battery pack.
 - **Motor Control Interfaces:** PPM, analog, UART, I2C, USB, CAN-bus - Various interfaces for connecting and communicating with the ESC for motor control.
 
 
@@ -23,10 +23,10 @@ In this section, we describe the most important parameters of our Electronic Spe
 <img src="../images/kyosho_torx8.jpg" height="300" />
 
 
-- **KV Rating:** 2300KV - KV rating indicates the motor's speed. At 2300KV, the motor will theoretically turn 2300 RPMs per volt without load. So, for a 4S LiPo battery (14.8 volts nominal), it would spin at approximately 29.600 RPMs.
-- **Number of Poles:** 4 - Motors with more poles, like this one with 4 poles, tend to offer smoother operation and enhanced torque at lower speeds, contributing to better control and efficiency in various driving conditions.
-- **Input Voltage:** LiPo 2-4S - The motor is designed to operate with LiPo batteries ranging from 2-cell (2S) to 4-cell (4S). This translates to a voltage range of roughly 7.4 volts to 14.8 volts.
-- **Weight:** 366g - The weight of the motor is 352 grams.
+- **KV Rating:** `2300KV` - KV rating indicates the motor's speed. At 2300KV, the motor will theoretically turn 2300 RPMs per volt without load. So, for a 4S LiPo battery (14.8 volts nominal), it would spin at approximately 29.600 RPMs.
+- **Number of Poles:** `4` - Motors with more poles, like this one with 4 poles, tend to offer smoother operation and enhanced torque at lower speeds, contributing to better control and efficiency in various driving conditions.
+- **Input Voltage:** `LiPo 2-4S` - The motor is designed to operate with LiPo batteries ranging from 2-cell (2S) to 4-cell (4S). This translates to a voltage range of roughly 7.4 volts to 14.8 volts.
+- **Weight:** `352g` - The weight of the motor is 352 grams.
 
 
 ## Battery Pack
@@ -35,10 +35,10 @@ In this section, we describe the most important parameters of our Electronic Spe
 
 <img src="../images/absima_4s_lipo.jpg" height="300" />
 
-- **Voltage:** 14.8V - The total voltage of the battery pack, which is the sum of the voltages of individual cells connected in series (3.7V per cell for a 4S pack).
-- **Capacity:** 6200mAh - The amount of charge the battery can hold, indicating how long it can provide a certain level of current (6200mAh means 6.2 amps for 1 hour).
-- **Discharge Rate:** 60C - The maximum rate at which the battery can be discharged safely. A 60C rating means the battery can discharge at 60 times its capacity, equating to 372 amps peak current (60 x 6.2A).
-- **Configuration:** 4S (4 Series) - Indicates that there are four lithium polymer cells connected in series within the pack.
+- **Voltage:** `14.8V` - The total voltage of the battery pack, which is the sum of the voltages of individual cells connected in series (3.7V per cell for a 4S pack).
+- **Capacity:** `6200mAh` - The amount of charge the battery can hold, indicating how long it can provide a certain level of current (6200mAh means 6.2 amps for 1 hour).
+- **Discharge Rate:** `60C` - The maximum rate at which the battery can be discharged safely. A 60C rating means the battery can discharge at 60 times its capacity, equating to 372 amps peak current (60 x 6.2A).
+- **Configuration:** `4S` - Indicates that there are four lithium polymer cells connected in series within the pack.
 
 
 ## RC Car
@@ -47,9 +47,9 @@ In this section, we describe the most important parameters of our Electronic Spe
 
 <img src="../images/kyosho_amg_gt3.jpg" height="300" />
 
-- **Wheel Diameter:** 97 mm - Essential for calculating vehicle speed from wheel RPM.
+- **Wheel Diameter:** `97 mm` - Essential for calculating vehicle speed from wheel RPM.
 
-- **Gear Ratio:** 8.95:1 - Crucial for translating motor RPM to drive axle speed.
+- **Gear Ratio:** `8.95:1` - Crucial for translating motor RPM to drive axle speed.
 
 
 # VESC Tool Configuration Guide
