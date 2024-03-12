@@ -33,7 +33,7 @@ apt install -y chromium-browser
 
 # install jtop for monitoring resource usage, temperature and power draw
 apt update && \
-apt install python3-pip && \
+apt install --yes python3-pip && \
 pip3 install --upgrade pip && \
 pip3 install -U jetson-stats
 
