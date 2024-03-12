@@ -47,9 +47,9 @@ In this section, we describe the most important parameters of our Electronic Spe
 
 <img src="../images/kyosho_amg_gt3.jpg" height="300" />
 
-- **Wheel Diameter:** 97 mm - Essential for calculating vehicle speed from wheel RPM.
+- **Wheel Diameter:** `97 mm` - Essential for calculating vehicle speed from wheel RPM.
 
-- **Gear Ratio:** 8.95:1 - Crucial for translating motor RPM to drive axle speed.
+- **Gear Ratio:** `8.95:1` - Crucial for translating motor RPM to drive axle speed.
 
 
 # VESC Tool Configuration Guide
