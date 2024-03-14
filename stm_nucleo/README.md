@@ -52,7 +52,7 @@ Download and install the [64-bit DEB Installer](https://www.segger.com/downloads
 3. Confirm with *OK*.
 4. Confirm with *OK*.
 5. First download the latest software from our repository and then select it.
-6. Set the correct programming address *0x080000*!
+6. Set the correct programming address *0x08000000*!
 7. Erase the chip
 8. Program the device.
 9. A statusbar indicates that everything is working correctly.
