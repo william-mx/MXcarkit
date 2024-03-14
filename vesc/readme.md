@@ -58,7 +58,7 @@ We utilize the [VESC Tool 6.02](https://vesc-project.com/vesc_tool) to apply fir
 
 ## Flashing Firmware
 
-Firmware is the low-level software that directly manages the hardware of the VESC, enabling control over motor parameters, application settings, and system behavior. Ensure the VESC Tool is installed, the VESC is connected to the computer via USB, and powered by the LiPo battery for setup. Our Flysky VESC uses the VESC 4.12 standard. The VESC Tool is compatible with several versions, including our `410 & 411 & 412` series. Explore different firmware versions in the `Archive` tab. We tested the setup with the latest firmware version `6.00`. Choose the appropriate firmware by verifying the Hardware Version, then upload it to the VESC.
+Firmware is the low-level software that directly manages the hardware of the VESC, enabling control over motor parameters, application settings, and system behavior. Ensure the VESC Tool is installed, the VESC is connected to the computer via USB, and powered by the LiPo battery for setup. Our Flysky VESC uses the VESC 4.12 standard. The VESC Tool is compatible with several versions, including our `410 & 411 & 412` series. Explore different firmware versions in the `Archive` tab. We tested the setup with the latest firmware version `6.02`. Choose the appropriate firmware by verifying the Hardware Version, then upload it to the VESC.
 
 
 <img src="../images/vesc_tool_firmware.png" height="500" />
