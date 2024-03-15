@@ -60,6 +60,9 @@ SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTR
 # clone mxck workspace
 git clone -b mxck_base https://github.com/william-mx/mxck_ws.git /home/mxck/mxck_ws/mxck_base
 
+# move startup script and make it executable
+mv /home/mxck/MXCarkit/startup_mxck.sh /home/mxck/mxck_ws/startup_mxck.sh
+chmod +x /home/mxck/mxck_ws/startup_mxck.sh
 
 # build docker image
 cd ~/mxck_ws/mxck_base
