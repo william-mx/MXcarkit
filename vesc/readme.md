@@ -107,10 +107,10 @@ Finally, activate the Servo Output feature by heading to `App Settings > General
 - **Cut-off End**: `12.8V` _(3.2V per cell)_
   - **Explanation**: This is the voltage at which the ESC will stop the vehicle, preventing further discharge of the battery to protect it from damage.
 
-- **Minimum Input Voltage**: `12.8V`
+- **Minimum Input Voltage**: `12.0V`
   - **Explanation**: This prevents the ESC from operating if the battery voltage drops below 3.2V per cell, protecting the battery from over-discharge.
 
-- **Maximum Input Voltage**: `16.8V`
+- **Maximum Input Voltage**: `18.0V`
   - **Explanation**: This prevents the ESC from receiving voltage higher than 4.2V per cell, protecting the ESC and the battery from overvoltage conditions.
 
 - **Max ERPM and MAX ERPM Reverse**: `+/- 30000`
