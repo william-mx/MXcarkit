@@ -37,6 +37,9 @@ apt install --yes python3-pip && \
 pip3 install --upgrade pip && \
 pip3 install -U jetson-stats
 
+# We utilize 'gdown' to download sample bagfiles from Google Drive
+pip3 install gdown
+
 # install relasense viewer
 # see https://dev.intelrealsense.com/docs/nvidia-jetson-tx2-installation for more details
 apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || \
