@@ -1,5 +1,5 @@
 # Power Supply
-## Powerbank (2500 mAh)
+## Powerbank (25000 mAh)
 
 <img src="../images/Powerbank.jpg" title="MXCarkit" width="500">
 
