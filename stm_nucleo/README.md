@@ -58,6 +58,33 @@ Download and install the [64-bit DEB Installer](https://www.segger.com/downloads
 9. A statusbar indicates that everything is working correctly.
 
 
+## Using Commandline Interface (JLinkExe)
+
+Run the following command to connect to the device:
+
+`JLinkExe -device STM32L432KC -if SWD -speed 4000`
+
+Enter the following commands in the J-Link Commander prompt:
+
+1. **Connect to the Target**
+   `connect`
+
+2. **Erase the Flash Memory**
+   `erase`
+
+3. **Load the HEX File**
+   `loadfile <filename.hex> (e.g. /home/mxck/MXcarkit/stm_nucleo/mxcarkit-microros-ros2.hex`)
+
+4. **Reset the MCU**
+   `reset`
+
+5. **Start Execution**
+   `go`
+
+6. **Exit the J-Link Commander**
+   `exit`
+
+
 
 
 
