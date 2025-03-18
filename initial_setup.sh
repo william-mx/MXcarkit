@@ -4,7 +4,6 @@
 # store current working directory in a variable
 cwd=$(pwd)
 
-
 # device: nano, nx
 while getopts d: flag
 do
@@ -13,8 +12,6 @@ do
     esac
 done
 
-# change hostname
-hostnamectl set-hostname mxck
 
 # set permission to access serial devices
 usermod -a -G dialout mxck

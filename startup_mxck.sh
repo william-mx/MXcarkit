@@ -1,12 +1,17 @@
 #!/bin/bash
 
-# set up a hotspot with the name 'mxck0000' and the password 'mxck0000'
-sudo nmcli dev wifi hotspot ifname wlan0 ssid mxck0000 password mxck0000
+# Load DEVICE_ID from system-wide environment
+source /etc/environment
 
-# run docker in new terminal
-sleep 5
-gnome-terminal --tab -- "/home/mxck/mxck_ws/mxck_base/run_ros_docker.sh" 'true'
+# Default to mxck0000 if DEVICE_ID is not set
+if [[ -z "$DEVICE_ID" ]]; then
+    DEVICE_ID="mxck0000"
+fi
 
+echo "Starting WiFi hotspot with SSID and password: $DEVICE_ID"
+
+# Set up a hotspot with DEVICE_ID as SSID and password
+nmcli dev wifi hotspot ifname wlan0 ssid "$DEVICE_ID" password "$DEVICE_ID"
 
 
 
