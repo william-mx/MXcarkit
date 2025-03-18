@@ -60,22 +60,6 @@ SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTR
 SUBSYSTEM=="tty", ACTION=="add", ATTRS{manufacturer}=="STMicroelectronics", ATTRS{idVendor}=="0483", ATTRS{product}=="ChibiOS/RT Virtual COM Port", ATTRS{idProduct}=="5740", MODE="777", SYMLINK+="vesc"' \
 >> /etc/udev/rules.d/10-local.rules
 
-# clone mxck workspace
-git clone -b mxck_base https://github.com/william-mx/mxck_ws.git /home/mxck/mxck_ws/mxck_base
-
-# move startup script and make it executable
-mv /home/mxck/MXcarkit/startup_mxck.sh /home/mxck/mxck_ws/startup_mxck.sh
-chmod +x /home/mxck/mxck_ws/startup_mxck.sh
-
-# build docker image
-cd ~/mxck_ws/mxck_base
-docker build -t mxck_base_melodic .
-
-
-# set the permissions the X server host
-# see http://wiki.ros.org/docker/Tutorials/GUI
-xhost +local:docker
-
 
 # install fan control for jetson nano
 if [[ $device == "nano" ]]
