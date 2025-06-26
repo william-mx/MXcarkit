@@ -13,7 +13,7 @@ echo "Installing Docker..."
 sudo apt install -y docker.io
 
 echo "Adding current user to the Docker group..."
-sudo usermod -aG docker $USER
+sudo usermod -aG docker mxck
 
 echo "Installing NVIDIA Container Runtime..."
 sudo apt install -y nvidia-container-runtime
@@ -40,4 +40,12 @@ echo "Restarting Docker..."
 sudo systemctl restart docker
 sudo systemctl enable docker
 
-echo "Installation complete. Please reboot for changes to take full effect."
+# -------------------------
+# Portainer Installation
+# -------------------------
+echo "Pulling Portainer image..."
+docker pull portainer/portainer-ce
+
+echo "Creating Portainer volume..."
+docker volume create portainer_data # Creates a named Docker volume to store Portainer's data (UI config, credentials, etc.)
+

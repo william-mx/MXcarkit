@@ -25,3 +25,6 @@ else
     nmcli dev wifi hotspot ifname wlan0 ssid "$DEVICE_ID" password "$DEVICE_ID"
 fi
 
+# Run Portainer startup script
+bash ./run_portainer.sh
+
