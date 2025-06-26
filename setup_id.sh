@@ -33,7 +33,9 @@ echo "Setting device ID and hostname to $DEVICE_ID..."
 # Set and persist hostname
 hostnamectl set-hostname "$DEVICE_ID"
 echo "$DEVICE_ID" > /etc/hostname
-sed -i "s/127.0.1.1 .*/127.0.1.1 $DEVICE_ID/" /etc/hosts
+
+# Update /etc/hosts to reflect new hostname, using a tab for formatting
+sed -i "s/^127\.0\.1\.1[[:space:]]\+.*/127.0.1.1\t$DEVICE_ID/" /etc/hosts
 
 # Configure autologin for the user
 echo "Setting autologin for user '$USERNAME'..."
