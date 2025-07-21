@@ -64,3 +64,32 @@ else
       "$NETWORK_NAME"
     echo "Docker network '$NETWORK_NAME' created successfully."
 fi
+
+# ---- SSH Key Generation ----
+SSH_DIR="/home/$USERNAME/.ssh"
+KEY_NAME="${DEVICE_ID}_admin"
+AUTHORIZED_KEYS="$SSH_DIR/authorized_keys"
+
+echo "Creating SSH keypair '$KEY_NAME' in $SSH_DIR..."
+
+mkdir -p "$SSH_DIR"
+chown "$USERNAME:$USERNAME" "$SSH_DIR"
+chmod 700 "$SSH_DIR"
+
+# Generate SSH keypair as target user
+sudo -u "$USERNAME" ssh-keygen -t ed25519 -C "$KEY_NAME" -f "$SSH_DIR/$KEY_NAME" -N ""
+
+# Set proper permissions
+chmod 600 "$SSH_DIR/$KEY_NAME"
+chmod 644 "$SSH_DIR/$KEY_NAME.pub"
+chown "$USERNAME:$USERNAME" "$SSH_DIR/$KEY_NAME" "$SSH_DIR/$KEY_NAME.pub"
+
+# Create or overwrite authorized_keys with the public key
+cp "$SSH_DIR/$KEY_NAME.pub" "$AUTHORIZED_KEYS"
+chmod 600 "$AUTHORIZED_KEYS"
+chown "$USERNAME:$USERNAME" "$AUTHORIZED_KEYS"
+
+echo "SSH keypair created:"
+echo "  Private key: $SSH_DIR/$KEY_NAME  ← copy this to your notebook manually"
+echo "  Public key:  $SSH_DIR/$KEY_NAME.pub"
+echo "  Added to:    $AUTHORIZED_KEYS"
